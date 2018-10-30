@@ -2,7 +2,7 @@ package sort;
 
 import java.util.Arrays;
 
-public class SelectionSort {
+public class Sort {
   public static void selectionSort(int[] lst) {
     for (int i = 0; i < lst.length - 1; ++i) {
       int indexOfMinValue = getIndexOfMinValue(i, lst);
