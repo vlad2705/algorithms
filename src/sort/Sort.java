@@ -11,6 +11,20 @@ public class Sort {
     System.out.println(Arrays.toString(lst));
   }
   
+  public static void bubbleSort(int[] lst) {
+    boolean swapped;
+    do {
+      swapped = false;
+      for (int i = 0; i < lst.length - 1; ++i) {
+        if (lst[i] > lst[i + 1]) {
+          swap(i, i + 1, lst);
+          swapped = true;
+        }
+      }
+    } while (swapped);
+    System.out.println(Arrays.toString(lst));
+  }
+  
   private static int getIndexOfMinValue(int startIndex, int[] lst) {
     int smallest = lst[startIndex];
     int index = startIndex;

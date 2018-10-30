@@ -6,5 +6,6 @@ public class Main {
     int[] lst = {4, 9, 7, 1, 3, 6, 5};
     Sort.selectionSort(lst);
     Search.linearSearch(lst, 5);
+    Sort.bubbleSort(lst);
   }
 }
